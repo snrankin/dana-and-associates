@@ -1,0 +1,36 @@
+@critical {
+    .page-header {
+        min-height: 50vh;
+        .section-inner {
+            background-color: rgba(#000, 0.5);
+            z-index: $zindex-dropdown;
+        }
+        h1 {
+            color: #fff;
+        }
+        .content-item {
+            flex: 0 0 auto;
+        }
+    }
+}
+.page_error {
+    .page-title.section-wrapper {
+        h1.page-title {
+            text-align: center;
+        }
+        .search-icon.btn-link {
+            @include hover-focus-active() {
+                color: $secondary;
+                span,
+                i {
+                    color: $secondary;
+                }
+            }
+            span {
+                font-weight: bold;
+                text-align: center;
+                text-indent: 0.03em;
+            }
+        }
+    }
+}

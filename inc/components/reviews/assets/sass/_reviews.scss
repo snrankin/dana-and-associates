@@ -1,0 +1,54 @@
+#reviews {
+    .container {
+        overflow: visible;
+    }
+    .row {
+        justify-content: center;
+    }
+    h2 {
+        @include grid-spacing('margin-bottom', $spacing: $gutters-200);
+    }
+}
+
+.maat-reviews {
+    width: 100%;
+    .owl-carousel {
+        &::before,
+        &::after {
+            position: absolute;
+            color: rgba($dark, 0.1);
+            // @include poly-fluid-sizing(
+            //     'font-size',
+            //     (
+            //         $sm: 80px,
+            //         $xl: 120px
+            //     )
+            // );
+            font-size: ms(6);
+        }
+        &::before {
+            content: icon($dana-quote-left);
+            @include icon-content('Dana');
+
+            top: 0;
+            left: 0;
+            @include grid-spacing('top');
+        }
+
+        &::after {
+            content: icon($dana-quote-right);
+            @include icon-content('Dana');
+
+            @include grid-spacing('bottom');
+
+            bottom: 0;
+            right: 0;
+        }
+        .maat-review {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

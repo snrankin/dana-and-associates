@@ -1,0 +1,102 @@
+body.single-team {
+    .team-header {
+        .section-inner {
+            padding-bottom: 0;
+        }
+
+        .team-header-title {
+            .content-wrapper {
+                justify-content: flex-end;
+            }
+
+            .team-title {
+                margin-bottom: 1rem;
+
+                &::after {
+                    content: '';
+                    display: block;
+                    width: rem(60px);
+                    height: 2px;
+                    background-color: $primary;
+                    margin-top: 1rem;
+                }
+            }
+        }
+    }
+
+    .main-content {
+        .content-wrapper {
+            .section-inner {
+                padding-top: 0;
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+        .mobile-team-image {
+            padding: 0;
+            @include media-breakpoint-up(ms) {
+                margin-left: 1.5rem;
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+
+    .sidebar {
+        ul {
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        .team-education {
+            span {
+                display: block;
+            }
+        }
+        .team-image-wrapper {
+            display: none;
+            @include media-breakpoint-up(ml) {
+                display: block;
+            }
+        }
+
+        ul.bar-admissions-list {
+            padding: 0;
+            margin: 0 -1rem -1rem 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            width: calc(100% + 1rem);
+
+            li {
+                list-style: none;
+                width: calc(50% - 1rem);
+                margin: 0 1rem 1rem 0;
+                padding: 0;
+                max-width: rem(100px);
+                &::before {
+                    display: none;
+                }
+            }
+        }
+
+        ul.bar-associations {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+
+            li {
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+}
+$gutter: $grid-gutter-width;
+#team-sidebar {
+    .widget.team-image-wrapper {
+        margin: -#{$gutter} -#{$gutter} $gutter;
+        width: calc(100% + #{$gutter * 2});
+    }
+}

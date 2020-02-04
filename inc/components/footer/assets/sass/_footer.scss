@@ -1,0 +1,211 @@
+#pre-footer {
+    border-top: 1px solid #fff;
+    .section-inner {
+        @include section-padding(1);
+    }
+
+    h4 {
+        color: #fff;
+        text-align: center;
+    }
+
+    p {
+        color: #fff;
+        text-align: center;
+    }
+    .wpcf7 {
+        .mc4wp-checkbox {
+            margin-top: ms(-1);
+            .custom-control-label {
+                align-items: center;
+            }
+            .custom-control-input:checked
+            ~ .custom-control-label
+            .custom-control-icon {
+                border-color: #fff;
+            }
+            .custom-control-label-text {
+                @extend h6 !optional;
+
+                font-size: $font-size-sm;
+            }
+        }
+        input {
+            box-shadow: none;
+            &.wpcf7-submit {
+                padding: $input-padding-y $input-padding-x;
+                height: $input-height;
+            }
+        }
+    }
+
+    input:not(.btn).form-control {
+        background-color: rgba(#fff, 0.25);
+        border: solid 1px #fff;
+        &::placeholder {
+            color: #fff;
+        }
+    }
+}
+
+#main-footer {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    .section-inner {
+        @include section-padding(1);
+    }
+    .row {
+        @media print {
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    a {
+        text-decoration: none !important;
+    }
+    #footer-col-1 {
+        @include media-breakpoint-up(ml) {
+            @include make-col(12);
+        }
+        @include media-breakpoint-up(lg) {
+            @include make-col(3);
+        }
+        @media print {
+            width: auto;
+            max-width: none;
+            flex: 0 1 auto;
+        }
+
+        .content-wrapper {
+            align-items: center;
+        }
+        .widget {
+            width: 80%;
+            @include media-breakpoint-up(ml) {
+                width: 25%;
+            }
+            @include media-breakpoint-up(lg) {
+                width: 100%;
+            }
+        }
+        #shortcode-widget-9 {
+            @media print {
+                width: 100%;
+                max-width: 230px;
+                min-width: 230px;
+            }
+        }
+        #shortcode-widget-4 .textwidget {
+            width: calc(100% + #{$gutters-50});
+            display: flex;
+            margin-right: -#{$gutters-50};
+            @media print {
+                display: none;
+            }
+            a {
+                display: block;
+                width: calc(50% - #{$gutters-50});
+                margin-right: $gutters-50;
+                margin-top: $gutters-50;
+            }
+        }
+    }
+
+    #media_image-3 {
+        margin-bottom: ms(2);
+    }
+
+    #footer-col-2 {
+        order: 3;
+
+        @include media-breakpoint-up(ml) {
+            order: 2;
+        }
+        @media print {
+            display: none;
+        }
+    }
+
+    #footer-col-3 {
+        order: 4;
+
+        @include media-breakpoint-up(ml) {
+            order: 3;
+        }
+        @media print {
+            display: none;
+        }
+    }
+
+    #footer-col-4 {
+        order: 2;
+
+        @include media-breakpoint-up(ml) {
+            order: 4;
+        }
+        @media print {
+            width: auto;
+            max-width: none;
+            flex: 0 1 auto;
+            .widget-title {
+                display: none;
+            }
+            .schema-info-container {
+                display: flex;
+                width: calc(100% + #{$grid-gutter-width});
+                margin-right: -#{$grid-gutter-width};
+            }
+            .schema-info-block {
+                margin-top: 0;
+                margin-bottom: 0;
+                margin-right: $grid-gutter-width;
+            }
+            .schema-info {
+                font-size: ms(0);
+            }
+        }
+        .social-profiles {
+            @media print {
+                display: none;
+            }
+        }
+    }
+    .schema-link,
+    .schema-info {
+        @extend %smallnormal !optional;
+    }
+    path,
+    rect {
+        fill: $dark;
+    }
+    a {
+        @include hover-focus-active {
+            color: #fff;
+            text-decoration: none;
+            path,
+            rect {
+                fill: #fff;
+            }
+        }
+    }
+    .widget {
+        > div {
+            overflow: hidden;
+        }
+        .nav-link {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+}
+
+#copyright {
+    border-top: 1px solid $dark;
+    order: 6;
+    padding-top: $grid-gutter-width/2;
+    p,
+    span {
+        text-align: center;
+        @extend %smallnormal !optional;
+    }
+}

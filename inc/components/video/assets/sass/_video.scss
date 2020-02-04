@@ -1,0 +1,18 @@
+figure.video-embed {
+    .figure-caption {
+        padding-bottom: 0;
+    }
+    .embed-responsive-item {
+        background-color: rgba(#000, 0.5);
+    }
+    .play-btn {
+        font-size: ms(3);
+        display: block;
+        color: #fff;
+        filter: drop-shadow(0 2px 4px rgba(#000, 0.25));
+        @include hover-focus-active {
+            color: $secondary;
+            text-decoration: none;
+        }
+    }
+}

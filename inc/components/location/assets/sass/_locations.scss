@@ -1,0 +1,20 @@
+.location-box {
+    .address {
+        margin-bottom: 0;
+        justify-content: center;
+        span {
+            @extend %smallnormal;
+        }
+        .schema-info {
+            display: block;
+        }
+    }
+}
+
+.location-cat-list {
+    .stretched-link {
+        margin-top: ms(0);
+        span {
+        }
+    }
+}

@@ -1,0 +1,12 @@
+#location-sidebar {
+    .schema-item-title {
+        margin-bottom: ms(-1);
+    }
+    .schema-info-block {
+        margin-bottom: $grid-gutter-width;
+        position: relative;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

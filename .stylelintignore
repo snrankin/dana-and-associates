@@ -1,0 +1,13 @@
+# Folders
+.vscode
+config
+wp-admin
+wp-include
+wp-content
+!wp-content/themes/oconnor-child
+
+_variables.scss
+
+*.min.*
+
+gulpfile.js

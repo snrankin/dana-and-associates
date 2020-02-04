@@ -1,0 +1,31 @@
+a.modal-link {
+    align-items: center;
+    &:hover {
+        color: $link-hover-color;
+        span {
+            color: $link-hover-color;
+        }
+        .modal-link-icon {
+            color: $link-hover-color;
+            path {
+                fill: $link-hover-color;
+            }
+        }
+    }
+    span {
+        transition: ease-in 0.2s color;
+    }
+}
+
+.modal-link-icon {
+    color: $link-color;
+    display: inline-block;
+    font-size: 1rem;
+    width: 1rem;
+    margin-right: 0.5rem;
+    transition: ease-in 0.2s color;
+    path {
+        fill: $link-color;
+        transition: ease-in 0.2s fill;
+    }
+}

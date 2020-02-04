@@ -1,0 +1,66 @@
+.schema-info-block {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 0;
+    + .schema-info-block {
+        margin-top: ms(-1);
+    }
+    .directions {
+        margin-top: ms(-2);
+        font-weight: bolder;
+    }
+}
+
+.multi-line-wrap {
+    .hours-of-business & {
+        display: table;
+        .business-schedule {
+            display: table-row;
+            > span {
+                display: table-cell;
+            }
+            .business-days {
+                text-align: right;
+            }
+            .business-hours {
+                padding-left: 0.2em;
+                text-align: left;
+            }
+        }
+    }
+    > span {
+        display: block;
+    }
+}
+
+.schema-info {
+    font-weight: inherit;
+    display: inline-flex;
+    align-items: baseline;
+}
+
+.schema-icon {
+    display: block;
+    transform: translateY(0.2em);
+    @include icon('Dana');
+    &::before {
+        margin-right: 0.5rem;
+        font-size: 1.25em;
+
+        .address & {
+            content: icon($dana-location-pin);
+        }
+        .phone & {
+            content: icon($dana-phone);
+        }
+        .fax & {
+            content: icon($dana-fax);
+        }
+        .email & {
+            content: icon($dana-mail);
+        }
+        .hours-of-business & {
+            content: icon($dana-open);
+        }
+    }
+}

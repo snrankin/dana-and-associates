@@ -1,0 +1,28 @@
+#practice-areas-archive {
+    .col {
+        min-width: 100%;
+        @include media-breakpoint-up(sm) {
+            min-width: 50%;
+        }
+
+        @include media-breakpoint-up(ml) {
+            min-width: 33.33%;
+        }
+    }
+
+    .hover-box-icon {
+        @include poly-fluid-sizing(
+            'font-size',
+            (
+                $sm: 50px,
+                $xl: 70px
+            )
+        );
+    }
+}
+
+#practice-area-intro {
+    p {
+        text-align: center;
+    }
+}

@@ -1,0 +1,722 @@
+{
+    "key": "group_location_info",
+    "title": "Location Info",
+    "fields": [
+        {
+            "key": "field_5c194e078a86c",
+            "label": "Location Name",
+            "name": "location_name",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "col-lg-4",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5c194e188a86d",
+            "label": "Location Type",
+            "name": "location_type",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "col-lg-4",
+                "id": ""
+            },
+            "choices": {
+                "LegalService": "-- Legal Service",
+                "Attorney": "--- Attorney",
+                "Notary": "--- Notary",
+                "LocalBusiness": "- Local Business",
+                "AnimalShelter": "-- Animal Shelter",
+                "AutomotiveBusiness": "-- Automotive Business",
+                "AutoBodyShop": "--- Auto Body Shop",
+                "AutoDealer": "--- Auto Dealer",
+                "AutoPartsStore": "--- Auto Parts Store",
+                "AutoRental": "--- Auto Rental",
+                "AutoRepair": "--- Auto Repair",
+                "AutoWash": "--- Auto Wash",
+                "GasStation": "--- Gas Station",
+                "MotorcycleDealer": "--- Motorcycle Dealer",
+                "MotorcycleRepair": "--- Motorcycle Repair",
+                "ChildCare": "-- Child Care",
+                "Dentist": "-- Dentist",
+                "DryCleaningOrLaundry": "-- Dry Cleaning Or Laundry",
+                "EmergencyService": "-- Emergency Service",
+                "FireStation": "--- Fire Station",
+                "Hospital": "-- Hospital",
+                "PoliceStation": "--- Police Station",
+                "EmploymentAgency": "-- Employment Agency",
+                "EntertainmentBusiness": "-- Entertainment Business",
+                "AdultEntertainment": "--- Adult Entertainment",
+                "AmusementPark": "--- Amusement Park",
+                "ArtGallery": "--- Art Gallery",
+                "Casino": "--- Casino",
+                "ComedyClub": "--- Comedy Club",
+                "MovieTheater": "--- Movie Theater",
+                "NightClub": "--- Night Club",
+                "FinancialService": "-- Financial Service",
+                "AccountingService": "--- Accounting Service",
+                "AutomatedTeller": "--- Automated Teller",
+                "BankOrCreditUnion": "--- Bank Or Credit Union",
+                "InsuranceAgency": "--- Insurance Agency",
+                "FoodEstablishment": "-- Food Establishment",
+                "Bakery": "--- Bakery",
+                "BarOrPub": "--- Bar Or Pub",
+                "Brewery": "--- Brewery",
+                "CafeOrCoffeeShop": "--- Cafe Or Coffee Shop",
+                "FastFoodRestaurant": "--- Fast Food Restaurant",
+                "IceCreamShop": "--- Ice Cream Shop",
+                "Restaurant": "--- Restaurant",
+                "Winery": "--- Winery",
+                "GovernmentOffice": "-- Government Office",
+                "PostOffice": "--- Post Office",
+                "HealthAndBeautyBusiness": "-- Health And Beauty Business",
+                "BeautySalon": "--- Beauty Salon",
+                "DaySpa": "--- Day Spa",
+                "HairSalon": "--- Hair Salon",
+                "HealthClub": "--- Health Club",
+                "NailSalon": "--- Nail Salon",
+                "TattooParlor": "--- Tattoo Parlor",
+                "HomeAndConstructionBusiness": "-- Home And Construction Business",
+                "Electrician": "--- Electrician",
+                "GeneralContractor": "--- General Contractor",
+                "HVACBusiness": "--- HVAC Business",
+                "HousePainter": "--- House Painter",
+                "Locksmith": "--- Locksmith",
+                "MovingLocation": "--- Moving Location",
+                "Plumber": "--- Plumber",
+                "RoofingContractor": "--- Roofing Contractor",
+                "InternetCafe": "-- Internet Cafe",
+                "Library": "-- Library",
+                "LodgingBusiness": "-- Lodging Business",
+                "BedAndBreakfast": "--- Bed And Breakfast",
+                "Campground": "--- Campground",
+                "Hostel": "--- Hostel",
+                "Hotel": "--- Hotel",
+                "Motel": "--- Motel",
+                "Resort": "--- Resort",
+                "MedicalBusiness": "-- Medical Business",
+                "Pharmacy": "-- Pharmacy",
+                "Physician": "-- Physician",
+                "ProfessionalService": "-- Professional Service",
+                "RadioStation": "-- Radio Station",
+                "RealEstateAgent": "-- Real Estate Agent",
+                "RecyclingCenter": "-- Recycling Center",
+                "SelfStorage": "-- Self Storage",
+                "ShoppingCenter": "-- Shopping Center",
+                "SportsActivityLocation": "-- Sports Activity Location",
+                "BowlingAlley": "--- Bowling Alley",
+                "ExerciseGym": "--- Exercise Gym",
+                "GolfCourse": "--- Golf Course",
+                "PublicSwimmingPool": "--- Public Swimming Pool",
+                "SkiResort": "--- Ski Resort",
+                "SportsClub": "--- Sports Club",
+                "StadiumOrArena": "--- Stadium Or Arena",
+                "TennisComplex": "--- Tennis Complex",
+                "Store": "-- Store",
+                "BikeStore": "--- Bike Store",
+                "BookStore": "--- Book Store",
+                "ClothingStore": "--- Clothing Store",
+                "ComputerStore": "--- Computer Store",
+                "ConvenienceStore": "--- Convenience Store",
+                "DepartmentStore": "--- Department Store",
+                "ElectronicsStore": "--- Electronics Store",
+                "Florist": "--- Florist",
+                "FurnitureStore": "--- Furniture Store",
+                "GardenStore": "--- Garden Store",
+                "GroceryStore": "--- Grocery Store",
+                "HardwareStore": "--- Hardware Store",
+                "HobbyShop": "--- Hobby Shop",
+                "HomeGoodsStore": "--- Home Goods Store",
+                "JewelryStore": "--- JewelryStore",
+                "LiquorStore": "--- Liquor Store",
+                "MensClothingStore": "--- Mens Clothing Store",
+                "MobilePhoneStore": "--- Mobile Phone Store",
+                "MovieRentalStore": "--- Movie Rental Store",
+                "MusicStore": "--- Music Store",
+                "OfficeEquipmentStore": "--- Office Equipment Store",
+                "OutletStore": "--- Outlet Store",
+                "PawnShop": "--- Pawn Shop",
+                "PetStore": "--- Pet Store",
+                "ShoeStore": "--- Shoe Store",
+                "SportingGoodsStore": "--- Sporting Goods Store",
+                "TireShop": "--- Tire Shop",
+                "ToyStore": "--- Toy Store",
+                "WholesaleStore": "--- Wholesale Store",
+                "TelevisionStation": "-- Television Station",
+                "TouristInformationCenter": "-- Tourist Information Center",
+                "TravelAgency": "-- Travel Agency",
+                "Airline": "- Airline",
+                "Corporation": "- Corporation",
+                "EducationalOrganization": "- Educational Organization",
+                "CollegeOrUniversity": "-- College Or University",
+                "ElementarySchool": "-- Elementary School",
+                "HighSchool": "-- High School",
+                "MiddleSchool": "-- Middle School",
+                "Preschool": "-- Preschool",
+                "School": "-- School",
+                "GovernmentOrganization": "- Government Organization",
+                "MedicalOrganization": "- Medical Organization",
+                "NGO": "- NGO",
+                "PerformingGroup": "- Performing Group",
+                "DanceGroup": "-- Dance Group",
+                "MusicGroup": "-- Music Group",
+                "TheaterGroup": "-- Theater Group",
+                "SportsOrganization": "- Sports Organization",
+                "SportsTeam": "-- Sports Team",
+                "Place": "Place",
+                "Accommodation": "- Accommodation",
+                "AdministrativeArea": "- Administrative Area",
+                "CivicStructure": "- Civic Structure",
+                "Landform": "- Landform",
+                "LandmarksOrHistoricalBuildings": "- Landmarks or Historical Buildings",
+                "TouristAttraction": "- Tourist Attraction",
+                "Residence": "- Residence",
+                "ApartmentComplex": "-- Apartment Complex"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5c19522c8a86e",
+            "label": "Location Logo",
+            "name": "location_logo",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "col-lg-4",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "admin-thumb",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5c195569dbc43",
+            "label": "Location Description",
+            "name": "location_description",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "col-12",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_5c195600dbc46",
+            "label": "Location Phone",
+            "name": "location_phone",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "col-lg-4",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5c195632dbc48",
+            "label": "Location Fax",
+            "name": "location_fax",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "col-lg-4",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5c195625dbc47",
+            "label": "Location Email",
+            "name": "location_email",
+            "type": "email",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "col-lg-4",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_5c195649dbc49",
+            "label": "Location Hours of Business",
+            "name": "location_hob",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "col-12",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Add Schedule",
+            "sub_fields": [
+                {
+                    "key": "field_5c195675dbc4a",
+                    "label": "Opening Time",
+                    "name": "opening_time",
+                    "type": "time_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "col-3",
+                        "id": ""
+                    },
+                    "display_format": "g:i a",
+                    "return_format": "H:i:s"
+                },
+                {
+                    "key": "field_5c195698dbc4b",
+                    "label": "Closing Time",
+                    "name": "closing_time",
+                    "type": "time_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "col-3",
+                        "id": ""
+                    },
+                    "display_format": "g:i a",
+                    "return_format": "H:i:s"
+                },
+                {
+                    "key": "field_5c1956badbc4c",
+                    "label": "Applicable Days",
+                    "name": "applicable_days",
+                    "type": "checkbox",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "Sunday": "Sunday",
+                        "Monday": "Monday",
+                        "Tuesday": "Tuesday",
+                        "Wednesday": "Wednesday",
+                        "Thursday": "Thursday",
+                        "Friday": "Friday",
+                        "Saturday": "Saturday"
+                    },
+                    "allow_custom": 0,
+                    "default_value": [],
+                    "layout": "horizontal",
+                    "toggle": 1,
+                    "return_format": "value",
+                    "save_custom": 0
+                }
+            ]
+        },
+        {
+            "key": "field_5c195718dbc4d",
+            "label": "Location Social Profiles",
+            "name": "location_social_profiles",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "field_5c195764dbc4f",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Add Social Profile",
+            "sub_fields": [
+                {
+                    "key": "field_5c195764dbc4f",
+                    "label": "Profile Url",
+                    "name": "profile_url",
+                    "type": "url",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_5c195757dbc4e",
+                    "label": "Profile Title",
+                    "name": "profile_title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5c1957a5dbc51",
+                    "label": "Icon Type",
+                    "name": "icon_type",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "icon": "Icon Font",
+                        "custom": "Custom Image"
+                    },
+                    "default_value": [],
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_5c1957c9dbc52",
+                    "label": "Icon Class",
+                    "name": "icon_class",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5c1957a5dbc51",
+                                "operator": "==",
+                                "value": "icon"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5c1957e4dbc53",
+                    "label": "Icon Image",
+                    "name": "icon_img",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5c1957a5dbc51",
+                                "operator": "==",
+                                "value": "custom"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "preview_size": "admin-thumb",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_5c2f8f5d0ce6e",
+                    "label": "Show Title",
+                    "name": "show_title",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 0,
+                    "ui": 1,
+                    "ui_on_text": "",
+                    "ui_off_text": ""
+                }
+            ]
+        },
+        {
+            "key": "field_5c1955e0dbc45",
+            "label": "Location Map URL",
+            "name": "location_map_url",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "col-12",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5c79cb07781fe",
+            "label": "Location Address",
+            "name": "location_address",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_5c79cb22781ff",
+                    "label": "Street",
+                    "name": "street",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "col col-lg-8",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5c79cb2d78200",
+                    "label": "Unit",
+                    "name": "unit",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "col col-lg-4",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5c79cb4b78201",
+                    "label": "City",
+                    "name": "city",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "col col-lg-6",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5c79cb5a78202",
+                    "label": "State",
+                    "name": "state",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "col col-lg-3",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5c79cb7578203",
+                    "label": "Zip",
+                    "name": "zip",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "col col-lg-3",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5c79cc8047610",
+                    "label": "Latitude",
+                    "name": "latitude",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "col col-lg-6",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5c79cc9647611",
+                    "label": "Longitude",
+                    "name": "longitude",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "col col-lg-6",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "location"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1551486284
+}

@@ -1,0 +1,28 @@
+.single-practice_areas {
+    .page-title {
+        h3.page_sub_title {
+            color: #fff !important;
+            text-transform: none;
+            letter-spacing: 0;
+            font-weight: normal;
+            text-indent: 0;
+            @include media-breakpoint-up(lg) {
+                max-width: 60%;
+            }
+        }
+    }
+}
+
+#practice-areas-content {
+    h3 {
+        color: $primary;
+    }
+    h4,
+    .h4 {
+        color: $secondary;
+    }
+    a {
+        font-weight: bold;
+        text-decoration: underline;
+    }
+}

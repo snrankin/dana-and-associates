@@ -1,0 +1,15 @@
+{
+    "extends": [
+        "/usr/local/lib/node_modules/stylelint-config-standard",
+        "/usr/local/lib/node_modules/stylelint-config-prettier"
+    ],
+    "rules": {
+        "indentation": 4,
+        "string-quotes": "single",
+        "property-no-unknown": null,
+        "at-rule-no-unknown": null,
+        "comment-empty-line-before": ["always", {
+            "ignore": ["stylelint-commands", "after-comment"]
+        }],
+    }
+}
